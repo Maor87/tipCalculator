@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(129, 226, 208);
+    background-color:  hsl(185, 41%, 84%);
     display: block;
     overflow: hidden;
     width: auto;
@@ -64,7 +64,7 @@ p {
 span {
     display: block;
     margin-left: 36px;
-    color: #808080;
+    color: hsl(186, 14%, 43%);
     position: absolute;
     top: 215px;
     font-family: 'Space Mono', monospace;
@@ -74,13 +74,13 @@ span {
     box-sizing: border-box;
     height: 330px;
     width: 370px;
-    border: 5px solid rgb(0,76,84);
+    border: 5px solid hsl(183, 100%, 15%);
     margin-left: 0;
     position: relative;
     top: 15px;
     left: 350px;
     border-radius: 18px;
-    background-color: rgb(0,76,84);
+    background-color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
 }
 
@@ -125,7 +125,7 @@ span {
     width: 80%;
     padding: 8px;
     color: rgb(0,76,84);
-    background-color: rgb(129, 226, 208);
+    background-color: hsl(172, 67%, 45%);
     border: 0;
     border-radius: 3px;
     cursor: pointer;
@@ -133,12 +133,12 @@ span {
 
 .reset-button:active {
     transform: translateY(2px);
-    background-color:rgb(23, 217, 104);
+    background-color: rgb(129, 226, 208);
 }
 
 .select-tip {
     position: relative;
-    color: #808080;
+    color: hsl(186, 14%, 43%);
     left: 40px;
     bottom: 210px;
     font-family: 'Space Mono', monospace;
@@ -154,13 +154,13 @@ span {
     bottom: 200px;
     cursor: pointer;
     color: #fff;
-    background-color: rgb(0,76,84);
+    background-color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
 }
 
 .five-percent:active {
     transform: translateY(2px);
-    background-color:rgb(23, 217, 104);
+    background-color: hsl(172, 67%, 45%);
 }
 
 .ten-percent {
@@ -173,13 +173,13 @@ span {
     bottom: 200px;
     color: #fff;
     cursor: pointer;
-    background-color: rgb(0,76,84);
+    background-color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
 }
 
 .ten-percent:active {
     transform: translateY(2px);
-    background-color:rgb(23, 217, 104);
+    background-color: hsl(172, 67%, 45%);
 }
 
 .fifteen-percent {
@@ -192,13 +192,13 @@ span {
     bottom: 200px;
     cursor: pointer;
     color: #fff;
-    background-color: rgb(0,76,84);
+    background-color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
 }
 
 .fifteen-percent:active {
     transform: translateY(2px);
-    background-color:rgb(23, 217, 104);
+    background-color: hsl(172, 67%, 45%);
 }
 
 .twentyfive-percent {
@@ -211,13 +211,13 @@ span {
     bottom:148px;
     cursor: pointer;
     color: #fff;
-    background-color: rgb(0,76,84);
+    background-color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
 }
 
 .twentyfive-percent:active {
     transform: translateY(2px);
-    background-color:rgb(23, 217, 104);
+    background-color: hsl(172, 67%, 45%);
 }
 
 .fifty-percent {
@@ -230,13 +230,13 @@ span {
     bottom: 148px;
     cursor: pointer;
     color: #fff;
-    background-color: rgb(0,76,84);
+    background-color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
 }
 
 .fifty-percent:active {
     transform: translateY(2px);
-    background-color:rgb(23, 217, 104);
+    background-color: hsl(172, 67%, 45%);
 }
 
 .custom-percent {
@@ -249,7 +249,7 @@ span {
     bottom: 148px;
     cursor: pointer;
     color: #fff;
-    background-color: rgb(0,76,84);
+    background-color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
 }
 
@@ -257,7 +257,7 @@ span {
     position: relative;
     right: 460px;
     bottom: 82px;
-    color: #808080;
+    color: hsl(186, 14%, 43%);
     font-family: 'Space Mono', monospace;
 }
 

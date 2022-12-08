@@ -1,4 +1,5 @@
 // giving classes and ids names
+    let mainContainer = document.querySelector('.main-container');
     let resetButton = document.querySelector('.reset-button');
     let billing = document.querySelector('#bill');
     let tipAmount = document.querySelector('.tip-num');
@@ -30,9 +31,9 @@
    }
    
    // convert all 3 to decimal numbers & persons to integer
-   let amount = parseFloat(amount.calculate);
-   let tip = parseFloat(tip.calculate);
-   let persons = parseInt(persons.calculate);
+   let amount = parseFloat(calculate.amount);
+   let tip = parseFloat(calculate.tip);
+   let persons = parseInt(calculate.persons);
     
     // connecting buttons functionality
     function calCul(e){
@@ -75,13 +76,37 @@
         console.log(calCul);
     }
 
+    let divideFullPrice = function(){// making calculations to show result in greenContainer
+        amount.forEach( () => {
+            if(persons < tip){
+                return amount * tip / persons;
+            }
+        });
+    }  
+    
+    const re = /^\d{0,2}$/g; // rules for person input
+
+    function reGex(e){// anything below 1 person will show invalid warning input
+        const inValid = re.exec(e.value);
+
+        persons.textContent = inValid 
+        ? `Can't be zero` : ``;
+    }
+
+    buttonPercentage.addEventListener('input', (event) => {
+        event.preventDefault();
+        reGex(persons);
+    });
+
     tipAmount = []; 
 
     totalAmount = [];
 
     (function(element){ // connecting button percentages to display result in green container
-     if(element <= buttonPercentage){
-        buttonPercentage.push(tipAmount, totalAmount);
+     if(element <= tip){
+         tip.push(amount / persons);
+
+         return tipAmount && totalAmount;
      }
   })();
      
@@ -102,7 +127,7 @@
     // reset button to delete all info
     resetButton.addEventListener('click', function(data) {
         if(data <= calculate){
-             return calculate.delete;
+             return calculate.delete && tipAmount.delete && totalAmount.delete;
         }
     });
 
