@@ -281,6 +281,15 @@ span {
     border: 3px solid greenyellow;
 }
 
+.error {
+    position: absolute;
+    top: 540px;
+    right: 843px;
+    margin: 0;
+    color: red;
+     
+}
+
 
 @media (max-width: 770px) {
     .main-container {
@@ -398,6 +407,11 @@ span {
        white-space: nowrap;
     }
 
+    .error {
+        top: 353px;
+        right: 80px;
+     }
+
     .num-input {
         padding: 5px;
         width: 363px;
@@ -425,7 +439,5 @@ span {
         top: 260px;
         bottom: 3px;
   }
-    }
+} 
    
-
-

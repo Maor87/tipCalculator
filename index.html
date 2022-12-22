@@ -38,30 +38,30 @@
         <p class="pricing-num2"></p>
     </div>
 
-    <button class="reset-button" onclick="addCode()"><strong>RESET</strong></button>
+    <button class="reset-button"><strong>RESET</strong></button>
    </div>
 
    
     <p class="select-tip"><small>Select Tip %</small></p>
 
     
-    <button class="five-percent p-buttons" name="percentage" value="0.05">
+    <button class="five-percent p-buttons" name="percentage" type="radio" value="0.05">
        <strong>5%</strong>
     </button>
 
-    <button class="ten-percent p-buttons" name="percentage" value="0.10">
+    <button class="ten-percent p-buttons" name="percentage" type="radio" value="0.10">
         <strong>10%</strong>
     </button>
 
-    <button class="fifteen-percent p-buttons" name="percentage" value="0.15">
+    <button class="fifteen-percent p-buttons" name="percentage" type="radio" value="0.15">
         <strong>15%</strong>
     </button>
 
-    <button class="twentyfive-percent p-buttons" name="percentage" value="0.25">
+    <button class="twentyfive-percent p-buttons" name="percentage" type="radio" value="0.25">
         <strong>25%</strong>
     </button>
 
-    <button class="fifty-percent p-buttons" name="percentage" value="0.50">
+    <button class="fifty-percent p-buttons" name="percentage" type="radio" value="0.50">
         <strong>50%</strong>
     </button>
 
@@ -71,8 +71,9 @@
    
    
 
-    <label class="num-people">Number of People</label>
-    <input type="text" class="num-input" placeholder="&#xf234">
+    <label class="num-people">Number of People</label> 
+    <input class="num-input" type="input" placeholder="&#xf234">
+   <div class="error"><span id="warning"></span></div>
   </div>
 </div>
 
